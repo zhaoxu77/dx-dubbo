@@ -23,12 +23,16 @@ dubbo:
   protocol:
     id: dubbo
     name: dubbo
-    port: 12345
+    port: 22345
     status: server
   ## RegistryConfig Bean
   registry:
     id: zookeeper
     address: zookeeper://127.0.0.1:2181
+
+  provider:
+    loadbalance: roundrobin
+
 
 # Enables Dubbo All Endpoints
 management:
